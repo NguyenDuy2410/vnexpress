@@ -1,0 +1,99 @@
+.TopPost {
+    margin: 0 auto;
+    width: 100%;
+    cursor: pointer;
+    // margin-left: 6%;
+    .strikethrough {
+        border: 1px solid #e5e5e5;
+        background-color: #e5e5e5;
+        margin: 20px 0px;
+    }
+    .top_post {
+        display: flex;
+        background-color: #f7f7f7;
+        .title_post {
+            padding-bottom: 20px;
+        }
+        img {
+            width: 50%;
+        }
+        .description_top_post {
+            padding: 20px 20px 0px 20px;
+            .title_post:hover {
+                color: #087cce;
+            }
+            .meta-new {
+                display: flex;
+                p {
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+                p:hover {
+                    color: #087cce;
+                }
+                span,
+                p {
+                    padding: 10px 0px;
+                    color: #757575;
+                }
+            }
+        }
+    }
+    .news_post {
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+
+        .content-new-post {
+            width: 30%;
+        }
+        .dot {
+            width: 2px;
+            background-color: #e5e5e5;
+        }
+        .look {
+            padding-left: 20px;
+
+            h3:hover {
+                color: #087cce;
+            }
+            img {
+                width: 56px;
+                height: 56px;
+                border-radius: 50px;
+            }
+            span {
+                font-size: 14px;
+                line-height: 16px;
+                color: #9f224e;
+                font-weight: bold;
+            }
+            h3 {
+                font-size: 15px;
+                font-weight: 700;
+                font-family: "Merriweather", serif;
+            }
+            .info_author {
+                display: flex;
+                margin-top: 10px;
+                justify-content: space-between;
+                p:hover {
+                    color: #087cce;
+                }
+                div {
+                    p {
+                        font-family: "Merriweather", serif;
+                        font-size: 14px;
+                        color: #757575;
+                        font-style: italic;
+                    }
+                    .comment {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

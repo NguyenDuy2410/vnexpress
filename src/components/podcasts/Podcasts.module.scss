@@ -1,0 +1,22 @@
+.Podcast {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+    cursor: pointer;
+    padding-bottom: 20px;
+
+    .title {
+        margin: 10px 0px;
+        display: inline-block;
+        border-bottom: 1px solid #b52759;
+    }
+    .title:hover {
+        color: #b52759;
+    }
+    .separation {
+        border: 1px solid #e5e5e5;
+        background-color: #e5e5e5;
+    }
+}

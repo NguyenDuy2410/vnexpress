@@ -1,0 +1,30 @@
+.RightNews {
+    width: 60%;
+    border-left: 1px solid #e5e5e5;
+    padding-left: 20px;
+    .business {
+        margin-bottom: 10px;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        h3:hover,
+        span:hover,
+        h4:hover {
+            color: #087cce;
+        }
+
+        h3 {
+            align-items: center;
+            margin-right: 20px;
+        }
+        span {
+            font-family: arial;
+            font-weight: 400;
+            font-size: 13px;
+            margin-right: 20px;
+        }
+    }
+    .news_post {
+        display: flex;
+    }
+}

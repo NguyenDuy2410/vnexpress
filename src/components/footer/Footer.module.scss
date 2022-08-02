@@ -1,0 +1,172 @@
+.footer {
+    height: 500px;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .footer_top {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-top: 5px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        ul {
+            display: block;
+            height: 100%;
+            padding: 5px;
+            li {
+                list-style: none;
+                a {
+                    color: #000;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                padding: 5px;
+            }
+        }
+        ul:first-child {
+            font-weight: 600;
+            .break {
+                border-bottom: 1px solid #aaa;
+            }
+        }
+        ul.last_menu {
+            border-left: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+        }
+        .meta {
+            width: 20%;
+            font-size: 14px;
+            .download {
+                display: flex;
+                flex-direction: column;
+                div:first-child {
+                    color: #4f4f4f;
+                }
+                div:last-child {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        height: 20px;
+                    }
+                    div {
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #e5e5e5;
+                        background-color: #f7f7f7;
+                        cursor: pointer;
+                        margin-top: 5px;
+
+                        &:hover {
+                            background-color: #e5e5e5;
+                        }
+                    }
+                    div:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .contact {
+                margin-top: 10px;
+                padding: 10px 0;
+                border-bottom: 1px solid lightgray;
+                div:first-child {
+                    color: #4f4f4f;
+                }
+                div:last-child {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    div {
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .hotline {
+                margin-top: 10px;
+                padding: 10px 0;
+                div:first-child {
+                    color: #4f4f4f;
+                }
+                div:last-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 5px;
+                        div {
+                            font-weight: 800;
+                        }
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_center {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #e5e5e5;
+        .left {
+            display: flex;
+            align-items: center;
+            div {
+                margin-right: 10px;
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            div:first-child {
+                padding: 0 20px;
+                border-right: 1px solid lightgray;
+            }
+            div:nth-child(2) {
+                padding: 0 20px;
+            }
+            svg {
+                margin-right: 20px;
+                color: #4f4f4f;
+                border-radius: 50%;
+                border: 1px solid #e5e5e5;
+                width: 30px;
+                height: 30px;
+                padding: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        font-size: 14px;
+        line-height: 20px;
+        .left {
+            .title {
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+    }
+}

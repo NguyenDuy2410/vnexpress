@@ -1,0 +1,52 @@
+.submenu {
+    margin-right: 10px;
+    position: relative;
+    padding: 10px 0;
+
+    font-size: 14px;
+    .title {
+        color: #4f4f4f;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+            color: #9f224e;
+        }
+    }
+    &:hover .subtitle {
+        display: block;
+    }
+    .subtitle {
+        display: none;
+        transition: all 0.2s;
+        animation-name: myfading;
+        animation-duration: 0.3s;
+        position: absolute;
+        top: 36px;
+        width: 150px;
+        z-index: 2;
+        color: #4f4f4f;
+        border-top: 1px solid #9f224e;
+        background-color: #fff;
+        ul {
+            li {
+                list-style: none;
+                padding: 5px;
+                cursor: pointer;
+                &:hover {
+                    background: #f7f7f7;
+                }
+            }
+        }
+    }
+}
+@keyframes myfading {
+    from {
+        opacity: 0;
+        transition: opacity;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

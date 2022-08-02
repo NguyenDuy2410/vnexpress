@@ -1,0 +1,14 @@
+.PodcastsNews {
+    width: 30%;
+    display: flex;
+    .info {
+        h3:hover {
+            color: #087cce;
+        }
+    }
+    img {
+        width: 20%;
+        height: 100px;
+        right: 0;
+    }
+}

@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 10px;
+
+    .header_top {
+        color: #757575;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        padding: 10px 100px;
+
+        .left {
+            display: flex;
+            align-items: center;
+            img {
+                padding: 5px 10px;
+            }
+            div {
+                padding: 5px 10px;
+                line-height: 32px;
+                &::before {
+                    content: "";
+                    border-left: 1px solid #aaa;
+                    margin-right: 10px;
+                    height: 20px;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            align-items: center;
+            .new {
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                border: 1px solid #aaa;
+                margin-right: 10px;
+                cursor: pointer;
+                height: 30px;
+                span {
+                    margin-left: 5px;
+                }
+
+                &:hover {
+                    color: #4f4f4f;
+                    background: #f7f7f7;
+                }
+            }
+            .international {
+                display: flex;
+                align-items: center;
+                border: 1px solid #aaa;
+                padding: 2px 5px;
+                margin-right: 10px;
+                cursor: pointer;
+                height: 30px;
+                img {
+                    height: 80%;
+                    margin-right: 5px;
+                }
+                &:hover {
+                    color: #4f4f4f;
+                    background: #f7f7f7;
+                }
+            }
+            .search {
+                margin-right: 10px;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: "";
+                    border-left: 1px solid #aaa;
+                    margin-right: 10px;
+                    height: 20px;
+                }
+                .form_group {
+                    width: 100%;
+                    position: relative;
+                    border: 1px solid #aaa;
+                    padding: 5px;
+                    border-radius: 15px;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        border: none;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    svg {
+                        cursor: pointer;
+                    }
+                }
+            }
+            .user {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-left: 5px;
+                    cursor: pointer;
+                    &:hover {
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
